@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Web Application | todo</title>
+  <meta name="description" content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+  <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="assets/css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="assets/css/font.css" type="text/css" cache="false" />
+  <link rel="stylesheet" href="assets/css/plugin.css" type="text/css" />
+  <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="js/ie/respond.min.js" cache="false"></script>
+    <script src="js/ie/html5.js" cache="false"></script>
+    <script src="js/ie/fix.js" cache="false"></script>
+  <![endif]-->
+</head>
+<body>
+  <section class="hbox stretch">
+    <!-- .aside -->
+    <aside class="bg-success dker aside-sm nav-vertical" id="nav">
+      <section class="vbox">
+        <header class="bg-black nav-bar">
+          <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen" data-target="#nav">
+            <i class="icon-reorder"></i>
+          </a>
+          <a href="#" class="nav-brand" data-toggle="fullscreen">todo</a>
+          <a class="btn btn-link visible-xs" data-toggle="collapse" data-target=".navbar-collapse">
+            <i class="icon-comment-alt"></i>
+          </a>
+        </header>
+        <section>
+          <!-- nav -->
+          <nav class="nav-primary hidden-xs">
+            <ul class="nav">
+              <li>
+                <a href="tasks.html">
+                  <i class="icon-tasks"></i>
+                  <span>Tasks</span>
+                </a>
+              </li>
+              <li>
+                <a href="notes.html">
+                  <i class="icon-pencil"></i>
+                  <span>Notes</span>
+                </a>
+              </li>
+              <li>
+                <a href="timeline.html">
+                  <i class="icon-time"></i>
+                  <span>Timeline</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- / nav -->
+        </section>
+        <footer class="footer bg-gradient hidden-xs">
+          <a href="modal.lockme.html" data-toggle="ajaxModal" class="btn btn-sm btn-link m-r-n-xs pull-right">
+            <i class="icon-off"></i>
+          </a>
+          <a href="#nav" data-toggle="class:nav-vertical" class="btn btn-sm btn-link m-l-n-sm">
+            <i class="icon-reorder"></i>
+          </a>
+        </footer>
+      </section>
+    </aside>
+    <!-- /.aside -->
+    <!-- .vbox -->
+    <section id="content">
+    </section>
+    <!-- /.vbox -->
+  </section>
+  <script data-main="js/config" src="bower_components/requirejs/require.js">
+	<script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+</body>
+</html>
